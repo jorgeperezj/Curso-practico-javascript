@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Figuras geométricas | Curso de JS en Platzi</title>
+</head>
+<body>
+	<div class="container my-5">
+		<header>
+			<h1>
+	    	    Figuras geométricas
+	    	</h1>
+	    	<p>
+	    		Primer taller del curso práctico de JavaScript en Platzi
+	    	</p>
+	    	<hr>
+		</header>
+
+		<section>
+			<h2>Calcular <strong>perímetro</strong> y <strong>área</strong> de un cuadrado. ⬛</h2>
+			<div class="row">
+				<form class="form-inline col">
+			    	<label for="ladoCuadrado">Lado del cuadrado:</label>
+			    	<input type="number" class="form-control mx-3" id="ladoCuadrado" required />
+			    	<input type="text" readonly class="form-control" size="10px" placeholder="Respuesta" id="respuestaCuadrado" />
+					<button type="button" class="btn btn-primary ml-4" onclick="calcularPerimetroCuadrado()">Calcular Perímetro</button>
+					<button type="button" class="btn btn-primary mx-2" onclick="calcularAreaCuadrado()">Calcular Área</button>
+				</form>	
+			</div>
+		</section>
+		<section>
+			<div class="my-5">
+				<hr><h2>Calcular <strong>perímetro</strong> y <strong>área</strong> de un triángulo. 🔺</h2>
+				<form">
+					<div class="row">
+						<div class="col">
+							<label for="ladoTriangulo1">1° Lado del triángulo:</label>
+			    			<input type="number" class="form-control" id="ladoTriangulo1" required />
+				    	</div>
+				    	<div class="col">
+					    	<label for="ladoTriangulo2">2° Lado del triángulo:</label>
+					    	<input type="number" class="form-control" id="ladoTriangulo2" required />
+					    </div>
+				    </div>
+				    <div class="row my-2">
+	    			    <div class="col">
+					    	<label for="baseTriangulo">Base del triángulo:</label>
+					    	<input type="number" class="form-control" id="baseTriangulo" required />
+					    </div>
+	    			    <div class="col">
+					    	<label for="alturaTriangulo">Altura del triángulo:</label>
+					    	<input type="number" class="form-control" id="alturaTriangulo" required />
+					    </div>
+					</div>
+					<div class="row">
+						<div class="col">
+					    	<input type="text" readonly class="form-control" placeholder="Respuesta" id="respuestaTriangulo" />
+				    	</div>
+				    	<div class="col">
+				    		<button type="button" class="btn btn-primary" onclick="calcularPerimetroTriangulo()">Calcular Perímetro</button>
+							<button type="button" class="btn btn-primary mx-1" onclick="calcularAreaTriangulo()">Calcular Área</button>
+				    	</div>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<section>
+			<hr><h2>Calcular <strong>perímetro, área</strong> y <strong>diametro</strong> de un círculo. 🟡</h2>
+			<div class="row">
+				<form class="form-inline col">
+			    	<label for="radioCirculo">Radio del círculo:</label>
+			    	<input type="number" class="form-control mx-3" id="radioCirculo" required />
+			    	<input type="text" readonly class="form-control" size="10px" placeholder="Respuesta" id="respuestaCirculo" />
+					<button type="button" class="btn btn-primary ml-4" onclick="calcularPerimetroCirculo()">Calcular Perímetro</button>
+					<button type="button" class="btn btn-primary mx-2" onclick="calcularAreaCirculo()">Calcular Área</button>
+					<button type="button" class="btn btn-primary" onclick="calcularDiametroCirculo()">Calcular Diametro</button>
+				</form>
+			</div>
+		</section>
+
+	</div>
+    <script src="./figuras.js"></script>
+</body>
+</html>
