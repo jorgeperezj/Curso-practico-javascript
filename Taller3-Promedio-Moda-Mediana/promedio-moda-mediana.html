@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Promedio, Moda y Mediana | Curso de JS en Platzi</title>
+</head>
+<body>
+	<div class="container my-5">
+		<header>
+			<h1>
+	    	    Promedio, Moda y Mediana
+	    	</h1>
+	    	<p>
+	    		Tercer taller del curso práctico de JavaScript en Platzi
+	    	</p>
+	    	<hr>
+		</header>
+
+		<section class="mb-5">
+			<h2>Calcular <strong>el promedio</strong> de una lista de números.</h2>
+			<div class="row">
+				<form class="form-inline col">
+			    	<label for="ladoCuadrado">Ingrese el conjunto de números:</label>
+			    	<input type="text" class="form-control mx-3" id="listaPromedio" placeholder="Ej: 1,2,3" />
+			    	<input type="text" class="form-control mx-3" id="resultProm" placeholder="Resultado" disabled />
+					<button type="button" class="btn btn-primary ml-4" onclick="getInputPromedio()">Calcular Promedio</button>
+				</form>
+			</div>
+		</section>
+
+		<section class="mb-5"	>
+			<h2>Calcular <strong>la mediana</strong> de una lista de números.</h2>
+			<div class="row">
+				<form class="form-inline col">
+			    	<label for="ladoCuadrado">Ingrese el conjunto de números:</label>
+			    	<input type="text" class="form-control mx-3" id="listaMediana" placeholder="Ej: 1,2,3" />
+			    	<input type="text" class="form-control mx-3" id="resultMedi" placeholder="Resultado" disabled />
+					<button type="button" class="btn btn-primary ml-4" onclick="getInputMediana()">Calcular Mediana</button>
+				</form>
+			</div>
+		</section>
+
+		<section>
+			<h2>Calcular <strong>la moda</strong> de una lista de números.</h2>
+			<div class="row">
+				<form class="form-inline col">
+			    	<label for="ladoCuadrado">Ingrese el conjunto de números:</label>
+			    	<input type="text" class="form-control mx-3" id="listaModa" placeholder="Ej: 1,2,3" />
+			    	<input type="text" class="form-control mx-3" id="resultModa" placeholder="Resultado" disabled />
+					<button type="button" class="btn btn-primary ml-4" onclick="getInputModa()">Calcular Moda</button>
+				</form>
+			</div>
+		</section>
+
+	</div>
+    <script src="./promedio-moda-mediana.js"></script>
+</body>
+</html>
